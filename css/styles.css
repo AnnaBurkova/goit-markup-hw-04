@@ -44,15 +44,6 @@ h6,
 p{
     margin: 0;
 }
-/* Основний колір тексту: #212121; */
-/* Додатковий колір тексту: #757575; */
-/* Білий : #FFFFFF; */
-/* Акцент : #2196F3 */
-
-/* Шапка background: #FFFFFF; */
-/* Секція 2 та футер #2F303A */
-/* Секціям Чим ми займаємося #F5F5F5 */
-/* Наша команда : #F5F4FA; */
 
 .container {
     width: 1200px;
@@ -359,7 +350,7 @@ p{
 }
 .text{
      
-          color:var(--additional-text-color) ;
+         color:var(--additional-text-color) ;
          font-size: 16px;
          line-height: 1.19;
          text-align: center;
@@ -377,21 +368,21 @@ p{
 }
 
 .network-link {
-        display: flex;
-        position: relative;
-        width: 44px;
-        height: 44px;
-        text-align: center;
-        fill: #AFB1B8;
-        border-radius: 50%;
+         display: flex;
+         position: relative;
+         width: 44px;
+         height: 44px;
+         text-align: center;
+         fill: #AFB1B8;
+         border-radius: 50%;
 }
 
 .icon-networks {
+         display: inline-block;
          position: absolute;
          top: 50%;
          left: 50%;
          transform: translate(-50%, -50%);
-         display: inline-block;
          width: 20px;
          height: 20px;
 }
@@ -407,6 +398,58 @@ p{
     fill: var(--selection-text-color);
     background-color: var(--accent-color);
 }
+
+
+/* Clients */
+
+.clients{
+     padding-top: 94px;
+}
+
+.clients-examples{
+     display:flex;
+}
+
+.clients-examples .client-info:not(:last-child) {
+     margin-right: 30px;
+}
+
+.client-info {
+     display: flex;
+     width: 170px;
+     height: 92px;
+     border: 1px solid #AFB1B8;
+     border-radius: 4px;
+}
+.client-link{
+     display: flex;
+     position: relative;
+     width: 170px;
+     height: 92px;
+     fill: #AFB1B8;
+}
+.icon-client{
+     display: inline-block;
+     width: 106px;
+     height:60px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     fill: #AFB1B8;
+}
+
+.client-link:hover .icon-client,
+.client-link:focus .icon-client{ 
+     fill: var(--accent-color); 
+   
+}
+.client-info:hover,
+.client-info:focus{
+     border: 1px solid var(--accent-color);
+     border-radius: 4px;
+}
+ 
 
 /* Buttons */
 
