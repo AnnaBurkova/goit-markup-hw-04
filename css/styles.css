@@ -359,47 +359,58 @@ p{
 }
 .text{
      
-     color:var(--additional-text-color) ;
-     font-size: 16px;
-     line-height: 1.19;
-     text-align: center;
-    }
+          color:var(--additional-text-color) ;
+         font-size: 16px;
+         line-height: 1.19;
+         text-align: center;
+}
 
  .social-networks{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding-top: 16px;
+         display: flex;
+         justify-content: center;
+         padding-top: 16px;
  }
   
 .network:not(:last-child){
-      margin-right: 10px;
+          margin-right: 10px;
+          justify-content: center; 
 }
 
-.network-link{
-     display: flex;
-     width: 44px;
-     height: 44px;
-     fill: #AFB1B8;
+.network-link {
+        display: flex;
+        position: relative;
+        width: 44px;
+        height: 44px;
+        text-align: center;
+        fill: #AFB1B8;
+        border-radius: 50%;
 }
 
-.icon-networks{
-     display: block;
-     border-radius: 50%;
-     
-     min-height: 100%;
-     min-width: 100%;
+.icon-networks {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         display: inline-block;
+         width: 20px;
+         height: 20px;
 }
 
-.icon-networks:hover,
+/* .icon-networks:hover, */
 .icon-networks:focus{
+    fill: var(--selection-text-color);
+    /* background-color: var(--accent-color); */
+}
+
+.network-link:hover,
+.network-link:focus {
     fill: var(--selection-text-color);
     background-color: var(--accent-color);
 }
 
-
 /* Buttons */
-.button {
+
+ .button{
     font-family: inherit;
     color: var(--selection-text-color);
     background-color: var(--button-main-hero-color);
@@ -413,7 +424,7 @@ p{
     padding: 10px 32px;
     min-width: 216px;
     border:none;
-}
+ }
 
 .button:hover,
 .button:focus{
