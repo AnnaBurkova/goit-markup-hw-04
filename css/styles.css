@@ -361,6 +361,10 @@ p{
          justify-content: center;
          padding-top: 16px;
  }
+
+ .social-networks.foot{
+          padding-top: 0;
+ }
   
 .network:not(:last-child){
           margin-right: 10px;
@@ -375,6 +379,7 @@ p{
          text-align: center;
          fill: #AFB1B8;
          border-radius: 50%;
+         background-color: rgba(255, 255, 255, 0.1);
 }
 
 .icon-networks {
@@ -579,11 +584,41 @@ p{
 /* Футер */
 footer{
     background-color: var(--hero-background-color);
+    align-items: baseline;
+    
 }
-.foot-container{
+.footer{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+.foot-container{
+     display: flex;
+     align-items: baseline;
+}
+.address{
+     min-width: 300px;
+   
+}
+
+.net-pages{
+      flex-basis: auto;
+     
+      
+   
+}
+.title-net{
+     color: var(--selection-text-color);
+     margin-bottom: 20px;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.14;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+}
+
+
 .contacts{
     margin-top: 28px;
 }
@@ -618,3 +653,6 @@ footer{
      color: var(--accent-color);
 }
 
+.
+   
+}
